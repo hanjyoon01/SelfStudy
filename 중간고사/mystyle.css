@@ -1,0 +1,94 @@
+/*202011390 한재윤*/
+* {margin:0px; padding:0px;}
+body{font-family: serif;}
+a{text-decoration:none;}
+li{ list-style:none; }
+
+header{
+	width:100%;
+	margin:0 auto; 
+	height:200px;
+	background-color: #FFF2C6;
+	text-align:center; 
+	position:fixed;
+}
+
+#title{
+	font-family:"Indie Flower";
+	height: 150px;
+	padding-top:50px;
+	font-size:35px;
+	text-align: center;
+	line-height:150px;
+}
+
+nav{
+	position: relative;
+	bottom:50px;
+	width:720px;
+	height:50px;
+	text-align: center;
+	line-height:50px;
+	margin:0 auto;
+	background-color:#E5A840;
+}
+section{
+	padding-top:200px;
+	width:720px;
+	margin:0 auto;
+}
+
+#content{
+	height:800px;
+	padding: 50px;
+	background-color:#DCEFAC;
+}
+
+footer{
+	height:100px;
+	background-color:#C6E8F2;
+	font-weight:bold;
+	text-align: center;
+	line-height:100px;
+}
+
+.menu { 
+	display: block; 
+	width:100px; 
+	height:50px; 
+	margin: 0 70px;
+	text-align: center;
+ 	line-height: 50px; 
+ 	float: left; 
+ 	color: #8106CE; 
+ 	font-size: 20px; 
+ 	font-weight: bold;
+ }
+
+.story{
+	height:700px;
+	padding: 20px;
+	border: 1px dashed black;
+	border-radius: 15px;
+}
+
+img {
+	width:250px;
+	float:left;
+}
+
+.colorDiv {width: 250px; height:30px; text-align: center; line-height: 30px; font-weight: bold; }
+
+
+
+input:nth-of-type(1) {display:none;}
+div.story:nth-of-type(1){display:none;}
+input:nth-of-type(1):checked ~ div.story:nth-of-type(1) {display:block;}
+
+input:nth-of-type(2) {display:none;}
+div.story:nth-of-type(2){display:none;}
+input:nth-of-type(2):checked ~ div.story:nth-of-type(2) {display:block;}
+
+input:nth-of-type(3) {display:none;}
+div.story:nth-of-type(3){display:none;}
+input:nth-of-type(3):checked ~ div.story:nth-of-type(3) {display:block;}

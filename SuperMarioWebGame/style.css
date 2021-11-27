@@ -1,0 +1,365 @@
+@font-face{
+	src:url("SuperMario256.ttf");
+	font-family:"SuperMario256";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+	font-family: "SuperMario256";
+}
+
+#container {
+    position: relative;
+    width: 840px;
+    height: 600px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.menu {
+    position: absolute;
+    width: 840px;
+    height: 600px;
+    background-image: url("bg/background_menu.png");
+    background-position: 0px -40px;
+    z-index: 10;
+    display: none;
+}
+
+#my_canvas {
+    position: absolute;
+
+}
+
+#main_menu {
+    display: block;
+}
+
+
+#logo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+	width:480px;
+	height:225px;
+}
+
+#volume{
+	position:absolute;
+	top:89%;
+	left:92%;
+	width:50px;
+	height:50px;
+	cursor: pointer;
+}
+#main_menu div:nth-of-type(1) {
+    position: absolute;
+    width: 170px;
+    text-align: center;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu h1 {
+    display: block;
+    width: 170px;
+	font-size: 40px;
+	color:white;
+	text-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+#main_menu h1 {
+    position: absolute;
+}
+
+#main_menu h1:nth-of-type(1) {
+    padding-top: 20px;
+    left: -250px;
+}
+
+#main_menu h1:nth-of-type(2) {
+    font-size: 65px;
+}
+
+#main_menu h1:nth-of-type(3) {
+	padding-top: 20px;
+    right: -250px;
+}
+
+.menu h2 {
+	display: block;
+	font-size: 65px;
+	color:black;
+	text-shadow: 10px 10px 10px white;
+	text-align: center;
+	margin-top: 120px;
+    cursor: default;
+}
+
+#difficulty div:nth-of-type(1) {
+    position: absolute;
+    width: 400px;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#difficulty h1 {
+    width: min-content;
+    margin-bottom: 50px;
+	font-size: 50px;
+}
+
+#clear div:nth-of-type(1) {
+    position: absolute;
+    width: 700px;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear h1 {
+    width: min-content;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+#clear h2{
+    display: block;
+    font-size: 65px;
+    color:black;
+    text-shadow: 10px 10px 10px white;
+    text-align: center;
+    margin-top: 90px;
+    cursor: default;
+}
+
+#clear #score{
+    font-size: 35px;
+    color: black; 
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+    width: 600px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+#game_over h1 {
+    width: min-content;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#game_over #score{
+    font-size: 35px;
+    color: black; 
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+    width: 600px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+#game_over div:nth-of-type(1) {
+    position: absolute;
+    width: 700px;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#all_clear h1 {
+    width: 600px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+#all_clear h2{
+    display: block;
+    font-size: 70px;
+    color:black;
+    text-shadow: 10px 10px 10px white;
+    text-align: center;
+    margin-top: 170px;
+    cursor: default;
+}
+
+#all_clear #score{
+    font-size: 50px;
+    color: black; 
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+    width: 600px;
+    cursor: default;
+    margin-bottom: 50px;
+}
+
+#all_clear div:nth-of-type(1) {
+    position: absolute;
+    width: 700px;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection_container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selection_container h1 {
+    width: min-content;
+    margin-bottom: 7px;
+}
+
+.selection_container:nth-of-type(1) {
+    top: 220px;    
+
+}
+
+.selection_container:nth-of-type(2) {
+    top: 380px;    
+}
+
+.selection_container > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.selection {
+    width: 130px;
+    height: 90px;
+    background-color: gray;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.selection p {
+    font-size: 60px;
+}
+
+.selection img {
+    width: 100px;
+    margin-top: 12px;
+}
+
+#back {
+    position: absolute;
+    display: none;
+    z-index: 20;
+    cursor: pointer;
+	color:white;
+	text-shadow: 5px 5px 10px black;
+	top: 20px;
+    right: 40px;
+}
+
+#back h1 {
+	font-size: 30px;
+}
+
+/*#stage_menu {
+    display: none;
+}*/
+
+/*도움말 부분 css*/
+.helpdiv1 {
+    font-size: 25px;
+    margin: 20px 30px 0 30px;
+    line-height: 60px
+}
+#nextpg {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 1px;
+    right: 20px;
+    cursor: pointer;
+}
+#prevpg {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+    cursor: pointer;
+    display: none;
+}
+#nextpg, #prevpg {
+    opacity: 0.7;
+}
+
+#nextpg:hover, #prevpg:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.helpdiv2, .helpdiv3 {
+    height: 50px;
+    margin-top: 40px;
+    display: none;
+}
+.helpdiv2 p, .helpdiv3 p {
+    line-height: 50px;
+    width: 600px;
+    height: 50px;
+    float: left;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+}
+.helpimg {
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-left: 100px;
+}
+.helpdiv2:nth-of-type(4) p, .helpdiv2:nth-of-type(5) p {
+    line-height: 25px;
+}
+.helpdiv2:nth-of-type(2), .helpdiv3:nth-of-type(7){
+    margin-top: 90px;
+}
+
+#back h1:hover {transform: scale(1.2); 	color: gold; text-shadow: 5px 5px 10px chocolate;}
+
+#main_menu h1:hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+
+#difficulty h1:nth-of-type(1):hover {transform: scale(1.2); color: springgreen; text-shadow: 5px 5px 10px green;}
+#difficulty h1:nth-of-type(2):hover {transform: scale(1.2); color: skyblue; text-shadow: 5px 5px 10px blue;}
+#difficulty h1:nth-of-type(3):hover {transform: scale(1.2);	color: red; text-shadow: 5px 5px 10px darkred;}
+
+#clear h1:nth-of-type(2):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+#clear h1:nth-of-type(3):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+#clear h1:nth-of-type(4):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+
+#game_over h1:nth-of-type(2):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+#game_over h1:nth-of-type(3):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}
+
+#all_clear h1:nth-of-type(2):hover {transform: scale(1.2); color: gold; text-shadow: 5px 5px 10px chocolate;}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>game</title>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+  <div id="container">
+
+  	<!-- back 버튼 -->
+    <div id="back">
+      <h1>BACK</h1>
+    </div>
+    
+    <!-- 메인메뉴 -->
+    <div class="menu" id="main_menu">
+      <img id="logo" src="img/logo.png">
+      <div>
+        <h1>SETUP</h1>
+        <h1>PLAY</h1>
+        <h1>HELP</h1>
+      </div>
+      <!-- 볼륨 조절 버튼 -->
+      <img id="volume" src="img/v_unmute.png">
+    </div>
+
+    <!-- 난이도 선택 화면 -->
+    <div class="menu" id="difficulty">
+      <h2>Difficulty</h2>
+      <div>
+        <h1>EASY</h1>
+        <h1>NORMAL</h1>
+        <h1>HARD</h1>
+      </div>
+    </div>
+
+    <!-- 클리어 화면 -->
+    <div class="menu" id="clear">
+      <h2>Clear</h2>
+      <div>
+        <h1 id="score"></h1>
+        <h1>REPLAY</h1>
+        <h1>NEXT</h1>
+        <h1>MENU</h1>
+      </div>
+    </div>
+
+    <!-- 마지막 단계 클리어 화면 -->
+   <div class="menu" id="all_clear">
+      <h2>All Clear!!!</h2>
+      <div>
+        <h1 id="score"></h1>
+        <h1>BACK TO MENU</h1>
+      </div>
+    </div>
+
+    <!-- 게임 오버 화면 -->
+    <div class="menu" id="game_over">
+      <h2>Game Over</h2>
+      <div>
+        <h1 id="score"></h1>
+        <h1>REPLAY</h1>
+        <h1>MENU</h1>
+      </div>
+    </div>
+
+    <!-- 환경 설정 화면 -->
+    <div class="menu" id="setup">
+      <h2>Setup</h2>
+      <!-- 음악 선택 -->
+      <div class="selection_container">
+        <h1>Music</h1>
+        <div>
+          <div class="selection"><p>A</p></div>
+          <div class="selection"><p>B</p></div>
+        </div>
+      </div>
+      <!-- 캐릭터 선택 -->
+      <div class="selection_container">
+        <h1>Character</h1>
+        <div>
+          <div class="selection"><img src="img/mario_life.png"></div>
+          <div class="selection"><img src="img/luigi_life.png"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 도움말 화면 -->
+    <div class="menu" id="help">
+      <h2 id="helptext">Help</h2>
+      <div class="helpdiv1">
+        Welcome to Mario World! A few days ago, Princess Peach was kidnapped by Koopa. 
+        Mario and Luigi Brothers should go to save the Princess Peach. 
+        Break all the bricks and save Princess Peach! Good Luck!
+      </div>
+
+      <div class="helpdiv2">
+        <img src="img/brick1.png" class="helpimg">
+        <p>
+          You should break this block to reach Peach.
+        </p>
+      </div>
+
+      <div class="helpdiv2">
+        <img src="img/brick2.png" class="helpimg">
+        <p>
+          You have to hit this block twice to break it.
+        </p>
+      </div>
+
+      <div class="helpdiv2">
+        <img src="img/mushroomgreen.png" class="helpimg">
+        <p>
+          Your ball will be slower.<br>You don't have to rush!
+        </p>
+      </div>
+
+      <div class="helpdiv2">
+        <img src="img/koopa.png" class="helpimg">
+        <p>
+          oops! Your ball will be faster<br>or the paddle will be shorter.
+        </p>
+      </div>
+
+      <div class="helpdiv2">
+        <img src="img/mushroomred.png" class="helpimg">
+        <p>
+          Your paddle will be longer. Enjoy it!
+        </p>
+      </div>
+
+      <div class="helpdiv3">
+        <img src="img/question.png" class="helpimg">
+        <p>
+          Something special might happen...Guess What!
+        </p>
+      </div>
+
+      <div class="helpdiv3">
+        <img src="img/peach.png" class="helpimg">
+        <p>
+          She is Princess Peach. You must save her!
+        </p>
+      </div>
+
+      <img src="img/arrow.png" id="nextpg">
+      <img src="img/rearrow.png" id="prevpg">
+
+    </div>
+
+    <!-- 게임 진행 화면 -->
+    <canvas id="my_canvas" width="840" height="600"></canvas>
+
+  </div>
+  <!--120x60-->
+  <!--840, 420-->
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function show(){
+			var form = document.myform;
+			var id = form["id"].value;
+			var name = form["name"].value;
+			var gender = form["gender"].value;
+			var cell = form["phone1"].value + "-" + form["phone2"].value + "-" + form["phone3"].value;
+			var address = form["address"].value;
+			var hobby = "";
+			for(var i=1;i<=5;i++){
+				if(form["hobby"+i].checked)
+					hobby+=form["hobby"+i].value + " ";
+			}
+			var str = id + "\n" + name + "\n" + gender + "\n";
+			str += cell + "\n" + address + "\n" + hobby;
+			alert(str);
+		}
+	</script>
+
+</head>
+<body>
+<form name="myform" method="post">
+	<table border="1">
+		<tr>
+			<td> * 성명: </td>
+			<td> 
+				<input type="text" size=15, maxlength=12 name="name">
+			</td>
+		<tr>
+			<td> * 아이디: </td>
+			<td>
+				<input type="text" size=15, maxlength=12 name="id">
+			</td> 
+		<tr>
+			<td> * 비밀번호: </td>
+			<td> 
+				<input type="password" size=15, maxlength=10 name="pass">
+			</td>
+		<tr>
+			<td> * 주소: </td>
+			<td> 
+				<input type="text" size=30, maxlength=30 name="address">
+			</td>
+		<tr>
+			<td> * 성별: </td>
+			<td> 
+				<input type="radio" name="gender" value="Male" checked>남
+				<input type="radio" name="gender" value="Female">여
+			</td>
+		</tr>
+		<tr>
+			<td> * 취미: </td>
+			<td> 
+				<input type="checkbox" name="hobby1" value="Game">게임하기
+				<input type="checkbox" name="hobby2" value="Music">음악듣기
+				<input type="checkbox" name="hobby3" value="Sports">운동하기
+				<input type="checkbox" name="hobby4" value="Movie">영화보기
+				<input type="checkbox" name="hobby5" value="Friend">친구보기
+			</td>
+		</tr>
+		<tr>
+			<td> * 휴대전화 : </td>
+			<td> 
+				<select name="phone1">
+					<option value = "010" selected>010</option>
+					<option value = "011">011</option>
+					<option value = "016">016</option>
+					<option value = "017">017</option>
+					<option value = "070">070</option>
+				</select>
+				-
+				<input type="text" size=4 name="phone2">
+				-
+				<input type="text" size=4 name="phone3">
+			</td>
+		</tr>
+		<tr>
+			<td> * 자기소개 : </td>
+			<td> 
+				<textarea rows=5 cols=60 name="introduce"></textarea>
+			</td>
+		</tr>
+	</table>
+	<input type="button" value="회원 가입" onclick="show();">
+	<input type="reset" value="다시작성">
+</form>
+</body>
+</html>
+

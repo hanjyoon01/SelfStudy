@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Html5 Basic Page</title>
+	<style>
+		nav div form .input-search:focus{background:yellow;}
+		* { font-family:"맑은 고딕", Gothic, sans-serif; }
+		a { text-decoration:none }
+		ul {  list-style:none;  }
+		body 
+		{	
+			background-color:#E6E6E6;
+			width:960px; margin:0px auto 0px auto;
+		}
+		article
+		{
+			border-width: 0px 0px 1px 0px;
+			border-style: solid;
+			border-color: #C9C9C9;
+		}
+
+		#page-wrapper { background-color:white }
+		.master-title {	font-size:30px color=#191919 }
+		.master-description { font-size:15px color=#383838 }
+		.article-title { font-size:25px }
+		.article-date { font-size:13px }
+		.article-body { font-size:14px }
+
+		.aside-list li a { font-size:13px; color:orange; }
+		.aside-list > h3 { font-size:15px; color:blue; }
+
+		* { margin:0px; padding:0px; }
+		#page-wrapper 
+		{ 
+			padding: 10px 20px 10px 20px; 
+			margin:40px auto 40px auto; 
+		}
+		#main-header { padding: 40px 50px 40px 50px; }
+		#main-navigation 
+		{ 
+			height:40px;
+			margin:0px 0px 20px 0px; 
+			border-width: 1px 0px 1px 0px;
+			border-style: solid;
+			border-color: #C9C9C9;
+			overflow:hidden;
+		}
+		#content{overflow:hidden;}
+
+		#main-section{ width:710px; float:left;}
+		#main-aside{ width:200px; float:right;}
+
+		.outer-menu-item
+		{ 
+			display:block; 
+			height:30px; 
+			width:80px;
+			padding:5px 20px 5px 20px;
+			text-align: center;
+			line-height: 30px;
+			float:left;
+		}
+		.outer-menu-item:hover
+		{ 
+			background-color:black; color:white; 
+		}
+		.pull-right{ height:40px; padding:7px; float:right;}
+		.pull-left{ height:40px; float:left;}
+		.input-search
+		{ 
+			display:block; 
+			height:24px; 
+			width:120px; 
+			padding-left:10px;
+			border-width:1px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-radius: 15px 0px 0px 15px;
+			float:left;
+		}
+		.input-search:focus
+		{
+			outline:0;
+		}
+		.input-search-submit { 
+			display:block; 
+			height:26px; 
+			width:50px;
+			border-width:1px;
+			border-style:solid;
+			border-color:#CCCCCC;
+			border-radius: 0px 15px 15px 0px;
+		}
+
+		article { padding: 0px 10px 20px 10px; }
+		.article-header { padding: 20px 0px 20px 0px; }
+
+	</style>
+</head>
+<body>
+
+<div id = "page-wrapper">
+	<header id = "main-header">
+		<h1 class="master-title">웹 프로그래밍 완전 정복</h1>
+		<h2 class="master-description">건국대학교 컴퓨터공학부</h2>
+	</header>
+
+	<nav id = "main-navigation">
+		<div class="pull-left">
+			<ul class="outer-menu">
+				<li class="outer-menu-item">HTML5</li>
+				<li class="outer-menu-item">CSS3</li>
+				<li class="outer-menu-item">PHP</li>
+			</ul>
+		</div>
+		<div class="pull-right">
+			<form>
+				<input type="text" class="input-search">
+				<input type="submit" value = "검색" class="input-search-submit">
+			</form>
+		</div>
+	</nav>
+	
+	<div id = "content">
+		<section id = "main-section">
+			<article>
+				<div class="article-header">
+					<h1 class="article-title">HTML5 개요와 활용</h1>
+					<p class="article-date">2021년 3월 10일</p>
+				</div>
+				<div class="article-body">
+					<img src="430X280.png">
+					<p>HTML5는 웹 상에서 콘텐츠(content)를 구성하고 보여주기 위한 HTML 언어의 최신 표준 권고안입니다. HTML5는 HTML 4.01, XHTML 1.1 등을 대체하는 HTML의 차세대 표준입니다.</p>
+				</div>
+			</article>
+			<article>
+				<div class="article-header">
+					<h1 class="article-title">HTML5 응용과 실습</h1>
+					<p class="article-date">2021년 3월 10일</p>
+				</div>
+				<div class="article-body">
+					<img src="430X280.png">
+					<p>HTML5(Hypertext Markup Language 5)는 특정 브라우저 기술에 종속되지 않고 어떤 플랫폼에서나 호환이 가능한 차세대 웹 표준 규격이다. 이런 점 때문에 전 세계 IT업계가 HTML5을 활용하여 다양한 확장 시스템을 개발하고 있다.</p>
+				</div>
+			</article>
+		</section>
+
+		<aside id = "main-aside">
+			<div class= "aside-list">
+				<h3>카테고리</h3>
+				<ul >
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+				</ul>
+			</div>
+			<div class="aside-list">
+				<h3>최근 글</h3>
+				<ul>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+					<li><a href="#">데이터</a></li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+	<footer id = "main-footer">
+		<a href="#">Created By Jaeyoon Han</a>
+	</footer>
+</div>
+</body>
+</html>
