@@ -1,0 +1,10 @@
+﻿  TicketManager.cpp
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.h(3,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(17,24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(39,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(42,33): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(56,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(62,35): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(77,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Project3\TicketManager.cpp(82,34): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Project3.vcxproj -> C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\Project\Debug\Project3.exe

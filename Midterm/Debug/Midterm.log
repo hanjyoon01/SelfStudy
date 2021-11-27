@@ -1,0 +1,9 @@
+﻿  JyhanScholarship.cpp
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(8,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(19,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(61,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(72,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(75,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(76,26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Midterm\JyhanScholarship.cpp(99,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Midterm.vcxproj -> C:\Users\한재윤\Desktop\건국대학교 과제\객체지향프로그래밍\CppHW\Debug\Midterm.exe
